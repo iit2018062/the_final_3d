@@ -15,16 +15,19 @@ export default function NodePopUp1({ nodeData }) {
 					}}
 				>
 					<Typography>
-						Node sourceName : {nodeData.data.sourceName}
+					Interface sourceName : {nodeData.data.sourceName}
 					</Typography>
 					<Typography>
-						Node sourceNameLabel : {nodeData.data.sourceNameLabel}
+					Interface sourceNameLabel : {nodeData.data.sourceNameLabel}
 					</Typography>
 					<Typography>
-						Node adminStatus : {nodeData.data.adminStatus}
+					Interface adminStatus : {nodeData.data.adminStatus}
 					</Typography>
 					<Typography>
-						Node protocolList : {nodeData.data.protocolList}
+						 protocolList :{" "}
+						{nodeData.data.protocolList.map((protocol) => {
+							return `${protocol} `;
+						})}
 					</Typography>
 					<Typography>
 						Anomaly Score : {nodeData.data.anomalyScore}

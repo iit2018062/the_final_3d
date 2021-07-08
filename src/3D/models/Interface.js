@@ -6,7 +6,7 @@ export default function Model({node,
 	setHoverNode1, 
 	focusNodeLevel2,}) {
   const group = useRef()
-  const { nodes, materials } = useGLTF(process.env.PUBLIC_URL  + '3DModels/interface.glb')
+  const { nodes, materials } = useGLTF(process.env.PUBLIC_URL  + '/3DModels/interface.glb')
   return (
     <group
 			ref={group}
@@ -27,4 +27,4 @@ export default function Model({node,
   )
 }
 
-useGLTF.preload(process.env.PUBLIC_URL  + '3DModels/interface.glb')
+useGLTF.preload(process.env.PUBLIC_URL  + '/3DModels/interface.glb')

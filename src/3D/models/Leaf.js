@@ -4,7 +4,7 @@ import RenderAnnotations from "./Annotaions";
 
 export default function LeafModel({ nodeData, focusNodeLevel1, setHoverNode }) {
 	const group = useRef();
-	const { nodes, materials } = useGLTF(process.env.PUBLIC_URL  + "3DModels/leaf.glb");
+	const { nodes, materials } = useGLTF(process.env.PUBLIC_URL  + "/3DModels/leaf.glb");
 	return (
 		<group
 			ref={group}
@@ -51,4 +51,4 @@ export default function LeafModel({ nodeData, focusNodeLevel1, setHoverNode }) {
 	);
 }
 
-useGLTF.preload(process.env.PUBLIC_URL  + "3DModels/leaf.glb");
+useGLTF.preload(process.env.PUBLIC_URL  + "/3DModels/leaf.glb");

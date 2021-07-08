@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei";
 
 export default function CautionModel({ position }) {
 	const group = useRef();
-	const { nodes, materials } = useGLTF(process.env.PUBLIC_URL  + "/3DModels/Caution.glb");
+	const { nodes, materials } = useGLTF(process.env.PUBLIC_URL  + "/3DModels/caution.glb");
 	return (
 		<group
 			ref={group}
@@ -32,4 +32,4 @@ export default function CautionModel({ position }) {
 	);
 }
 
-useGLTF.preload(process.env.PUBLIC_URL  + "/3DModels/Caution.glb");
+useGLTF.preload(process.env.PUBLIC_URL  + "/3DModels/caution.glb");

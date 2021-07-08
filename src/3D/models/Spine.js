@@ -7,7 +7,7 @@ export default function SpineModel({
 	setHoverNode,
 }) {
 	const group = useRef();
-	const { nodes, materials } = useGLTF(process.env.PUBLIC_URL  + "3DModels/spine.glb");
+	const { nodes, materials } = useGLTF(process.env.PUBLIC_URL  + "/3DModels/spine.glb");
 	return (
 		<group
 			ref={group}
@@ -54,4 +54,4 @@ export default function SpineModel({
 	);
 }
 
-useGLTF.preload(process.env.PUBLIC_URL  + "3DModels/spine.glb");
+useGLTF.preload(process.env.PUBLIC_URL  + "/3DModels/spine.glb");
