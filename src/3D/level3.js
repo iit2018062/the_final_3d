@@ -12,13 +12,13 @@ export default function Renderlevel3({
 	level3,
 }) {
 	var counter = 0;
-
+    //console.log(level3nodes);
 	return (
 		<group>
 			{level3nodes.map((node) => {
-				const score = node.data.anomalyScore;
-				const tick = score < 20 && score >= 0;
-				const caution = score > 20 && score <= 100;
+				// const score = node.data.anomalyScore;
+				// const tick = score < 20 && score >= 0;
+				// const caution = score > 20 && score <= 100;
 				counter++;
 				if (level3 === true) {
 					if (
@@ -27,10 +27,10 @@ export default function Renderlevel3({
 					) {
 						return (
 							<group key={counter}>
-								{caution && (
+								{/* {caution && (
 									<CautionModel position={node.position} />
 								)}
-								{tick && <TickModel position={node.position} />}
+								{tick && <TickModel position={node.position} />} */}
 								<LeafModel
 									nodeData={node}
 									focusNodeLevel1={focusNodeLevel1}
@@ -45,10 +45,10 @@ export default function Renderlevel3({
 						console.log(node.data.nodeName);
 						return (
 							<group key={counter}>
-								{tick && <TickModel position={node.position} />}
+								{/* {tick && <TickModel position={node.position} />}
 								{caution && (
 									<CautionModel position={node.position} />
-								)}
+								)} */}
 								<SpineModel
 									setHoverNode={setHoverNode}
 									nodeData={node}

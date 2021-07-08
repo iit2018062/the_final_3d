@@ -1,4 +1,4 @@
-import { Grid } from "@material-ui/core";
+import { Grid, jssPreset } from "@material-ui/core";
 import React, { useState, useEffect, useMemo, useRef } from "react";
 import Main3DComp from "./3D";
 import SideBarComp from "./UI/sideBar";
@@ -98,17 +98,43 @@ function fetchlevel3(epg) {
 				var newInterfaceLinks = [];
 				var newEndpoints = [];
 				var newVms = [];
+				var newLeafs = [];
+				var maxNodesInLevel = 14;
+				var nodesLeft = array.length;
+				var theta, radius=4, maxRadius, myObj, x, z;
+				var y = 5;
+				//var counter = 0;
 				setisinterface(true);
 				for (var i in array) {
 					//console.log(array[i]);
+					theta =(2 * Math.PI) / Math.min(maxNodesInLevel, nodesLeft);
+					radius = maxNodesInLevel;
+
+					x = radius * Math.cos(theta * i);
+					z = radius * Math.sin(theta * i);
+
+					myObj = {
+						data: array[i],
+						position: [x, y, z],
+					};
+					varnode.push(myObj);
+					counter += 1;
+
+					if (counter === maxNodesInLevel) {
+						maxRadius = radius;
+						nodesLeft -= maxNodesInLevel;
+						counter = 0;
+						maxNodesInLevel += 5;
+						y += 5; //distance added every level
+					}
 
 					const tempCombined = [...leafs, ...spines];
 					const nodeIndex = tempCombined
 						.map((node) => node.data.nodeName)
 						.indexOf(array[i].nodeName);
 					if (nodeIndex >= 0 && nodeIndex < tempCombined.length) {
-						varnode.push(tempCombined[nodeIndex]);
-						counter++;
+						//varnode.push(tempCombined[nodeIndex]);
+						//counter++;
 						// newDefaultLoc[0] += tempCombined[nodeIndex].position[0];
 						// newDefaultLoc[1] += tempCombined[nodeIndex].position[1];
 						// newDefaultLoc[2] += tempCombined[nodeIndex].position[2];
@@ -132,72 +158,70 @@ function fetchlevel3(epg) {
 				var input = array[i].interface;
 				if(input!==undefined){
 				
-				var maxNodesInLevel = 20;
-				var nodesLeft = input.length;
+				var maxNodesInLevel1 = 20;
+				var nodesLeft1 = input.length;
 				// //distributing in circle
 
-				var radius, theta;
-				var counter = 0;
+				var radius1, theta1;
+				var counter1 = 0;
 				// var y = nodeData.position[1] + 5;
-				var y = 4;
+				var y1 = 4;
 				var count = 0;
-				for (let i in input) {
+				for (let j in input) {
 					count++;
-					theta =
-						(2 * Math.PI) / Math.min(maxNodesInLevel, nodesLeft);
-					radius = maxNodesInLevel / 2;
-					const x =
-					tempCombined[nodeIndex].position[0] + radius * Math.cos(theta * i);
-					const z =
-					tempCombined[nodeIndex].position[2] + radius * Math.sin(theta * i);
-					const myObj = {
-						data: input[i],
-						position: [x, y, z],
+					theta1 =
+						(2 * Math.PI) / Math.min(maxNodesInLevel1, nodesLeft1);
+					radius1 = maxNodesInLevel1 / 2;
+					const x1 =myObj.position[0] + radius1 * Math.cos(theta1 * j);
+					const z1 =myObj.position[2] + radius1 * Math.sin(theta1 * j);
+					const myObj1 = {
+						data: input[j],
+						position: [x1, y1, z1],
 					};
 					newInterfaceLinks.push({
-						src: tempCombined[nodeIndex].position,
-						target: [x, y, z],
-						id: `${input[i].sourceName}${count}${tempCombined[nodeIndex].data.nodeName}`,
+						src: myObj.position,
+						target: [x1, y1, z1],
+						id: `${input[j].sourceName}${count}${tempCombined[nodeIndex].data.nodeName}`,
 					});
-					newInterfaces.push(myObj);
+					newInterfaces.push(myObj1);
 					//endpoints
-					if (input[i].endpoints !== undefined) {
+					if (input[j].endpoints !== undefined) {
 						const endObj = {
-							data: input[i].endpoints[0],
-							vmName: input[i].vmName,
-							position: [x, y + 5, z],
+							data: input[j].endpoints[0],
+							vmName: input[j].vmName,
+							position: [x1, y1 + 2, z1],
 						};
 						newEndpoints.push(endObj);
 						newInterfaceLinks.push({
 							color: "red",
-							src: [x, y, z],
-							target: [x, y + 5, z],
-							id: `${input[i].endpoints[0].epg}${count}${tempCombined[nodeIndex].data.nodeName}`,
+							src: [x1, y1, z1],
+							target: [x1, y1 + 2, z1],
+							id: `${input[j].endpoints[0].epg}${count}${tempCombined[nodeIndex].data.nodeName}`,
 						});
 						//vms
-						if (input[i].endpoints[0].vmName !== undefined) {
+						if (input[j].endpoints[0].vmName !== undefined) {
 							//console.log(epg);
 							const vmObj = {
-								data: input[i].endpoints[0].epg,
-								vmName: input[i].endpoints[0].vmName,
-								position: [x, y + 10, z],
+								data: input[j].endpoints[0].epg,
+								vmName: input[j].endpoints[0].vmName,
+								position: [x1, y1 + 5, z1],
 							};
 							newVms.push(vmObj);
 							newInterfaceLinks.push({
 								color: "green",
-								src: [x, y + 5, z],
-								target: [x, y + 10, z],
-								id: `${input[i].endpoints[0].epg}${count}${tempCombined[nodeIndex].data.nodeName}`,
+								src: [x1, y1 + 2, z1],
+								target: [x1, y1 + 5, z1],
+								id: `${input[j].endpoints[0].epg}${count}${tempCombined[nodeIndex].data.nodeName}`,
 							});
 						}
 					}
 
-					counter += 1;
-					if (counter === maxNodesInLevel) {
-						nodesLeft -= maxNodesInLevel;
-						counter = 0;
-						maxNodesInLevel += 5;
-						y += 2; //distance added every level
+					counter1 += 1;
+					if (counter1 === maxNodesInLevel1) {
+						nodesLeft1 -= maxNodesInLevel1;
+						counter1 = 0;
+						maxNodesInLevel1 += 5;
+						y1 += 2; //distance added every level
 					}
 				}
 			}
@@ -415,19 +439,9 @@ function fetchlevel3(epg) {
 	}, []);
 
 	function resetCamera() {
-		//default position of the camera
-		// if(level3===true)
-		// {
-		// setTargetPosition(new THREE.Vector3(...defaultCameraLoc));
-		// setTargetLookAt(defaultCameraLookAt);
-		// return;
-		// }
-        if(level3===false){
+		if(level3===false){
 		setEndpoints([]);
 		setEpg([]);
-		// setlevel3spine([]);
-		// setlevel3leaf([]);
-		//setisinterface(false);
 		setSelectedNode(null);
 		setInterfaces([]);
 		setInterfaceLink([]);}
@@ -457,11 +471,6 @@ function fetchlevel3(epg) {
 		setlevel3nodes([]);
 		setHoverNode1(null);
 	}
-	//just a utility function
-	// function renameKey(obj, oldKey, newKey) {
-	// 	obj[newKey] = obj[oldKey];
-	// 	delete obj[oldKey];
-	// }
 	//fetch level one data
 	function fetchData1() {
 		setInterfaces([]);
@@ -485,17 +494,6 @@ function fetchlevel3(epg) {
 		})
 			.then((response) => {
 				setStatusMsg("data successfully fetched!");
-
-				//preprocessing
-				// response.data.forEach((obj) => {
-				// 	renameKey(obj, "Node.nodeName", "nodeName");
-				// 	renameKey(obj, "Node.fabricLinks", "fabricLinks");
-				// 	renameKey(obj, "Node.model", "model");
-				// 	renameKey(obj, "Node.nodeRole", "nodeRole");
-				// 	renameKey(obj, "Node.nodeId", "nodeId");
-				// 	renameKey(obj, "Node.serial", "serial");
-				// 	renameKey(obj, "Node.anomalyScore", "anomalyScore");
-				// });
 
 				//reset old data
 				setSpines([]);
