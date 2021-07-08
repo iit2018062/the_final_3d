@@ -14,22 +14,22 @@ export default function NodePopUp({ nodeData }) {
 					}}
 				>
 					<Typography>
-						Node Name : {nodeData.data.nodeName}
+						 Name : {nodeData.data.nodeName}
 					</Typography>
 					<Typography>
 						Anomaly Score : {nodeData.data.anomalyScore}
 					</Typography>
 					<Typography>
-						Node Role : {nodeData.data.nodeRole}
+						 Role : {nodeData.data.nodeRole}
 					</Typography>
 					<Typography>
-						Node serial : {nodeData.data.serial}
+						 serial : {nodeData.data.serial}
 					</Typography>
 					<Typography>
-						Node version : {nodeData.data.version}
+						 version : {nodeData.data.version}
 					</Typography>
 					<Typography>
-						Node model : {nodeData.data.model}
+						 model : {nodeData.data.model}
 					</Typography>
 				</Paper>
 			)}

@@ -22,9 +22,8 @@ export default function Renderlevel3({
 				counter++;
 				if (level3 === true) {
 					if (
-						node.data.nodeRole === "leaf" &&
-						(selectedNode == null ||
-							selectedNode.data.nodeName === node.data.nodeName)
+						node.data.nodeRole === "leaf" 
+						
 					) {
 						return (
 							<group key={counter}>
@@ -36,13 +35,12 @@ export default function Renderlevel3({
 									nodeData={node}
 									focusNodeLevel1={focusNodeLevel1}
 									setHoverNode={setHoverNode}
+									level3 = {level3}
 								/>
 							</group>
 						);
 					} else if (
-						node.data.nodeRole === "spine" &&
-						(selectedNode == null ||
-							selectedNode.data.nodeName === node.data.nodeName)
+						node.data.nodeRole === "spine" 
 					) {
 						console.log(node.data.nodeName);
 						return (
@@ -55,6 +53,7 @@ export default function Renderlevel3({
 									setHoverNode={setHoverNode}
 									nodeData={node}
 									focusNodeLevel1={focusNodeLevel1}
+									level3 = {level3}
 								/>
 							</group>
 						);

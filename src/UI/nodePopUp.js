@@ -14,20 +14,23 @@ export default function NodePopUp1({ nodeData }) {
 						padding: 10,
 					}}
 				>
+					
 					<Typography>
-					Interface sourceName : {nodeData.data.sourceName}
-					</Typography>
-					<Typography>
-					Interface sourceNameLabel : {nodeData.data.sourceNameLabel}
+					Interface Name : {nodeData.data.sourceNameLabel}
 					</Typography>
 					<Typography>
 					Interface adminStatus : {nodeData.data.adminStatus}
 					</Typography>
 					<Typography>
+					
 						 protocolList :{" "}
-						{nodeData.data.protocolList.map((protocol) => {
+						{
+						//if(nodeData.data.protocolList!==undefined){
+						(nodeData.data.protocolList!==undefined && nodeData.data.protocolList.map((protocol) => {
 							return `${protocol} `;
-						})}
+						}))}
+					
+						
 					</Typography>
 					<Typography>
 						Anomaly Score : {nodeData.data.anomalyScore}

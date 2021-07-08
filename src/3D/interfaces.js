@@ -1,6 +1,6 @@
 import React from "react";
 
-import Model from "./models/Interface";
+import InterfaceModel from "./models/interfac1";
 
 export default function RenderInterfaces({
 	interfaces,
@@ -10,28 +10,30 @@ export default function RenderInterfaces({
 	selectedNode,
 }) {
 	// useEffect(() => {
-	//console.log(interfaces);
+// console.log(interfaces);
+// console.log(level3);
 	// }, [interfaces]);
 	var counter = 1;
 
 	return (
 		<>
-			{selectedNode !== null &&
-				interfaces !== undefined &&
+			{((level3===true || selectedNode !== null) &&
+				(interfaces !== undefined)) &&
 				interfaces.map((node) => {
 					counter++;
 					return (
 						<group
 							key={
-								selectedNode.data.nodeName +
+								
 								node.data.sourceName +
 								counter
 							}
 						>
-							<Model
+							<InterfaceModel
 								node={node}
 								setHoverNode1={setHoverNode1}
 								focusNodeLevel2={focusNodeLevel2}
+								
 							/>
 						</group>
 					);

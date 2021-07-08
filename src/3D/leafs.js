@@ -27,11 +27,12 @@ export default function RenderLeafs({
 							{caution && (
 								<CautionModel position={node.position} />
 							)}
-							{tick && <TickModel position={node.position} />}
+							
 							<LeafModel
 								nodeData={node}
 								focusNodeLevel1={focusNodeLevel1}
 								setHoverNode={setHoverNode}
+								level3 = {level3}
 							/>
 						</group>
 					);

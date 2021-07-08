@@ -58,7 +58,7 @@ export default function SideBarComp({
 							color="secondary"
 							fullWidth
 							variant="outlined"
-							placeholder="Search Node"
+							placeholder="Search "
 							value={searchTerm}
 							onChange={(e) => setSearchTerm(e.target.value)}
 						/>{" "}
@@ -84,7 +84,7 @@ export default function SideBarComp({
 						fullWidth
 						onClick={reloadLevel1}
 					>
-						Reload Level One
+						Show Fabric Topology
 					</Button>
 				</Grid>
 				<Grid item>
@@ -99,6 +99,7 @@ export default function SideBarComp({
 							isinterface={isinterface}
 							focusNodeLevel2={focusNodeLevel2}
 							selectedNode={selectedNode}
+							level3 = {level3}
 						/>
 					)}
 				</Grid>

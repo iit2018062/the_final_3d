@@ -2,7 +2,7 @@ import { Typography } from "@material-ui/core";
 import { Html } from "@react-three/drei";
 import React, { useRef } from "react";
 
-export default function RenderAnnotations({ name }) {
+export default function RenderAnnotations1({ name }) {
 	const mesh = useRef();
 
 	return (
@@ -20,12 +20,12 @@ export default function RenderAnnotations({ name }) {
 				<div
 					style={{
 						width: "auto",
-						backgroundColor: "rgba(0,0,0,0.5)",
-						backdropFilter: "blur(5px)",
+						backgroundColor: "transparent",
+						//backdropFilter: "blur(5px)",
 						borderRadius: 10,
 						padding: 2,
 						color: "white",
-						fontWeight: 600,
+						fontWeight: 10000,
 						display: "flex",
 						justifyContent: "center",
 						alignItems: "center",

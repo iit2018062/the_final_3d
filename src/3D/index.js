@@ -71,6 +71,7 @@ export default function Main3DComp({
 					setHoverNode={setHoverNode}
 					selectedNode={selectedNode}
 					level3 = {level3}
+					
 				/>
 			</Suspense>
 			<Suspense fallback={null}>

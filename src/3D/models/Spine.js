@@ -5,13 +5,25 @@ export default function SpineModel({
 	nodeData,
 	focusNodeLevel1,
 	setHoverNode,
+	flag,
+	level3,
+	
 }) {
 	const group = useRef();
 	const { nodes, materials } = useGLTF(process.env.PUBLIC_URL  + "/3DModels/spine.glb");
+	var position   = nodeData.position;
+	if(flag!==0)
+	{
+		position = [
+			nodeData.position[0],
+			nodeData.position[1]-8,
+			nodeData.position[2]
+		]
+	}
 	return (
 		<group
 			ref={group}
-			position={nodeData.position}
+			position={position}
 			onClick={() => {
 				focusNodeLevel1(nodeData);
 			}}

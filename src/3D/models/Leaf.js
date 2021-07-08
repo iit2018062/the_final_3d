@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 import RenderAnnotations from "./Annotaions";
 
-export default function LeafModel({ nodeData, focusNodeLevel1, setHoverNode }) {
+export default function LeafModel({ nodeData, focusNodeLevel1, setHoverNode,level3 }) {
 	const group = useRef();
 	const { nodes, materials } = useGLTF(process.env.PUBLIC_URL  + "/3DModels/leaf.glb");
 	return (

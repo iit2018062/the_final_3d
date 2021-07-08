@@ -43,9 +43,7 @@ function App() {
 	const [level3nodes, setlevel3nodes] = useState([]);
 	const [level3leaf, setlevel3leaf] = useState([]);
 	const [level3spine, setlevel3spine] = useState([]);
-	// const [level3interface, setlevel3interface] = useState([]);
-	// const [level3endpoints, setlevel3endpoints] = useState([]);
-	// const [level3epg, setlevel3pgs] = useState([]);
+
 	const [level3, setlevel3] = useState(false);
 	function focusNodeLevel2(nodeData) {
 		const nodeLoc = new THREE.Vector3(
@@ -74,97 +72,7 @@ function App() {
 		setlevel3(true);
 		fetchlevel3(epg);
 	}
-	function fetchlevel3interfaces(nodeName) {
-		//setisinterface(true);
-		var newInterfaces = [];
-		var newInterfaceLinks = [];
-		var newEndpoints = [];
-		var newVms = [];
-		for (var i in level3details) {
-			var nodeData = level3details[i].data;
-			
-			if (nodeData.data.nodeName === nodeName.data.nodeName) {
-				// console.log(nodeData.data.nodeName);
-				// console.log(nodeName.data.nodeName);
-				var input = level3details[i].interfaces;
-				if(input!==undefined){
-				
-				var maxNodesInLevel = 20;
-				var nodesLeft = input.length;
-				// //distributing in circle
-
-				var radius, theta;
-				var counter = 0;
-				// var y = nodeData.position[1] + 5;
-				var y = 4;
-				var count = 0;
-				for (let i in input) {
-					count++;
-					theta =
-						(2 * Math.PI) / Math.min(maxNodesInLevel, nodesLeft);
-					radius = maxNodesInLevel / 2;
-					const x =
-						nodeData.position[0] + radius * Math.cos(theta * i);
-					const z =
-						nodeData.position[2] + radius * Math.sin(theta * i);
-					const myObj = {
-						data: input[i],
-						position: [x, y, z],
-					};
-					newInterfaceLinks.push({
-						src: nodeData.position,
-						target: [x, y, z],
-						id: `${input[i].sourceName}${count}${nodeData.data.nodeName}`,
-					});
-					newInterfaces.push(myObj);
-					//endpoints
-					if (input[i].endpoints !== undefined) {
-						const endObj = {
-							data: input[i].endpoints[0],
-							vmName: input[i].vmName,
-							position: [x, y + 5, z],
-						};
-						newEndpoints.push(endObj);
-						newInterfaceLinks.push({
-							color: "red",
-							src: [x, y, z],
-							target: [x, y + 5, z],
-							id: `${input[i].endpoints[0].epg}${count}${nodeData.data.nodeName}`,
-						});
-						//vms
-						if (input[i].endpoints[0].vmName !== undefined) {
-							//console.log(epg);
-							const vmObj = {
-								data: input[i].endpoints[0].epg,
-								vmName: input[i].endpoints[0].vmName,
-								position: [x, y + 10, z],
-							};
-							newVms.push(vmObj);
-							newInterfaceLinks.push({
-								color: "green",
-								src: [x, y + 5, z],
-								target: [x, y + 10, z],
-								id: `${input[i].endpoints[0].epg}${count}${nodeData.data.nodeName}`,
-							});
-						}
-					}
-
-					counter += 1;
-					if (counter === maxNodesInLevel) {
-						nodesLeft -= maxNodesInLevel;
-						counter = 0;
-						maxNodesInLevel += 5;
-						y += 2; //distance added every level
-					}
-				}
-			}
-		}}
-		setInterfaces(newInterfaces);
-		setInterfaceLink(newInterfaceLinks);
-		setEndpoints(newEndpoints);
-		setEpg(newVms);
-	}
-	function fetchlevel3(epg) {
+function fetchlevel3(epg) {
 		resetCamera();
 		axios({
 			url: "https://172.31.165.136:31782/api/telemetry/topology/search.json?filter="+epg,
@@ -184,8 +92,13 @@ function App() {
 				var epgdetails = [];
 				var spine = [];
 				var leaf = [];
-				var newDefaultLoc = [0, 0, 0];
+				//var newDefaultLoc = [0, 0, 0];
 				var counter = 0;
+				var newInterfaces = [];
+				var newInterfaceLinks = [];
+				var newEndpoints = [];
+				var newVms = [];
+				setisinterface(true);
 				for (var i in array) {
 					//console.log(array[i]);
 
@@ -196,9 +109,9 @@ function App() {
 					if (nodeIndex >= 0 && nodeIndex < tempCombined.length) {
 						varnode.push(tempCombined[nodeIndex]);
 						counter++;
-						newDefaultLoc[0] += tempCombined[nodeIndex].position[0];
-						newDefaultLoc[1] += tempCombined[nodeIndex].position[1];
-						newDefaultLoc[2] += tempCombined[nodeIndex].position[2];
+						// newDefaultLoc[0] += tempCombined[nodeIndex].position[0];
+						// newDefaultLoc[1] += tempCombined[nodeIndex].position[1];
+						// newDefaultLoc[2] += tempCombined[nodeIndex].position[2];
 						if (tempCombined[nodeIndex].data.nodeRole === "spine") {
 							spine.push(tempCombined[nodeIndex]);
 						} else if (
@@ -214,10 +127,90 @@ function App() {
 
 						epgdetails.push(endObj);
 					}
+					
+					
+				var input = array[i].interface;
+				if(input!==undefined){
+				
+				var maxNodesInLevel = 20;
+				var nodesLeft = input.length;
+				// //distributing in circle
+
+				var radius, theta;
+				var counter = 0;
+				// var y = nodeData.position[1] + 5;
+				var y = 4;
+				var count = 0;
+				for (let i in input) {
+					count++;
+					theta =
+						(2 * Math.PI) / Math.min(maxNodesInLevel, nodesLeft);
+					radius = maxNodesInLevel / 2;
+					const x =
+					tempCombined[nodeIndex].position[0] + radius * Math.cos(theta * i);
+					const z =
+					tempCombined[nodeIndex].position[2] + radius * Math.sin(theta * i);
+					const myObj = {
+						data: input[i],
+						position: [x, y, z],
+					};
+					newInterfaceLinks.push({
+						src: tempCombined[nodeIndex].position,
+						target: [x, y, z],
+						id: `${input[i].sourceName}${count}${tempCombined[nodeIndex].data.nodeName}`,
+					});
+					newInterfaces.push(myObj);
+					//endpoints
+					if (input[i].endpoints !== undefined) {
+						const endObj = {
+							data: input[i].endpoints[0],
+							vmName: input[i].vmName,
+							position: [x, y + 5, z],
+						};
+						newEndpoints.push(endObj);
+						newInterfaceLinks.push({
+							color: "red",
+							src: [x, y, z],
+							target: [x, y + 5, z],
+							id: `${input[i].endpoints[0].epg}${count}${tempCombined[nodeIndex].data.nodeName}`,
+						});
+						//vms
+						if (input[i].endpoints[0].vmName !== undefined) {
+							//console.log(epg);
+							const vmObj = {
+								data: input[i].endpoints[0].epg,
+								vmName: input[i].endpoints[0].vmName,
+								position: [x, y + 10, z],
+							};
+							newVms.push(vmObj);
+							newInterfaceLinks.push({
+								color: "green",
+								src: [x, y + 5, z],
+								target: [x, y + 10, z],
+								id: `${input[i].endpoints[0].epg}${count}${tempCombined[nodeIndex].data.nodeName}`,
+							});
+						}
+					}
+
+					counter += 1;
+					if (counter === maxNodesInLevel) {
+						nodesLeft -= maxNodesInLevel;
+						counter = 0;
+						maxNodesInLevel += 5;
+						y += 2; //distance added every level
+					}
 				}
-				newDefaultLoc[0] /= counter;
-				newDefaultLoc[1] /= counter;
-				newDefaultLoc[2] /= counter;
+			}
+		
+	}
+		setInterfaces(newInterfaces);
+		setInterfaceLink(newInterfaceLinks);
+		setEndpoints(newEndpoints);
+		setEpg(newVms);
+				
+				// newDefaultLoc[0] /= counter;
+				// newDefaultLoc[1] = 10;
+				// newDefaultLoc[2] /= counter;
 				//console.log(newDefaultLoc);
 				//set default location
 
@@ -226,13 +219,14 @@ function App() {
 				setlevel3spine(spine);
 				setlevel3leaf(leaf);
 
-				setDefaultCameraLookAt(newDefaultLoc);
-				counter *= 2; //distance of camera from central point
-				setDefaultCameraLoc([
-					newDefaultLoc[0] + counter,
-					newDefaultLoc[1] + counter,
-					newDefaultLoc[2] + counter,
-				]);
+				// setDefaultCameraLookAt(newDefaultLoc);
+				// counter *= 3; //distance of camera from central point
+				// setDefaultCameraLoc([
+				// 	newDefaultLoc[0] + counter,
+				// 	newDefaultLoc[1] + counter,
+				// 	newDefaultLoc[2] + counter,
+				// ]);
+				
 			})
 			.catch((error) => {
 				setErrorMsg("no data for the given search pressure reload level one!");
@@ -246,20 +240,12 @@ function App() {
 
 	function focusNodeLevel1(nodeData) {
 		if (nodeData === undefined) return;
-		//Fetching Data for level 2
-		//setlevel3(false);
-		// setlevel3details([]);
-		// setlevel3nodes([]);
-
+		if(level3===true)
+		{resetCamera();return;}
 		setInterfaces([]);
 		setInterfaceLink([]);
-		if (level3 === false) {
-			fetchData2(nodeData);
-		} else if (level3 === true) {
-			resetCamera();
-			fetchlevel3interfaces(nodeData);
-			setisinterface(true);
-		}
+		fetchData2(nodeData);
+		
 
 		//some maths to get the new position vector of camera
 		const nodeLoc = new THREE.Vector3(
@@ -274,7 +260,7 @@ function App() {
 
 		setTargetLookAt([
 			nodeData.position[0],
-			nodeData.position[1] + 1,
+			nodeData.position[1],
 			nodeData.position[2],
 		]);
 
@@ -323,7 +309,7 @@ function App() {
 				// var y = nodeData.position[1] + 5;
 				var y = 2;
 				if (nodeData.data.nodeRole === "spine") {
-					y = 8;
+					y = 12;
 				}
 
 				for (let i in input) {
@@ -398,7 +384,7 @@ function App() {
 							.map((node) => node.data.nodeName)
 							.indexOf(node2);
 						newInterfaceLinks.push({
-							src: tempCombined[targetIndex].position,
+							src: [tempCombined[targetIndex].position[0],tempCombined[targetIndex].position[1]-8,tempCombined[targetIndex].position[2]],
 							target: nodeData.position,
 							id: `${nodeData.data.fabricLinks.neighbourNode}${nodeData.position}${tempCombined[targetIndex].position}`,
 						});
@@ -410,6 +396,8 @@ function App() {
 				setInterfaceLink(newInterfaceLinks);
 				setEndpoints(newEndpoints);
 				setEpg(newVms);
+				// setDefaultCameraLoc([maxNodesInLevel*1.3, y + 10, maxNodesInLevel*1.3]);
+				// setDefaultCameraLookAt([0, y / 2, 0]);
 			})
 			.catch((error) => {
 				setErrorMsg("could not fetch data");
@@ -428,7 +416,13 @@ function App() {
 
 	function resetCamera() {
 		//default position of the camera
-
+		// if(level3===true)
+		// {
+		// setTargetPosition(new THREE.Vector3(...defaultCameraLoc));
+		// setTargetLookAt(defaultCameraLookAt);
+		// return;
+		// }
+        if(level3===false){
 		setEndpoints([]);
 		setEpg([]);
 		// setlevel3spine([]);
@@ -436,7 +430,7 @@ function App() {
 		//setisinterface(false);
 		setSelectedNode(null);
 		setInterfaces([]);
-		setInterfaceLink([]);
+		setInterfaceLink([]);}
 		setTargetPosition(new THREE.Vector3(...defaultCameraLoc));
 		setTargetLookAt(defaultCameraLookAt);
 	}
@@ -617,7 +611,7 @@ function App() {
 				setLinks(newLinks);
 
 				//readjust camera's default location based on the data
-				setDefaultCameraLoc([maxRadius, y + 10, maxRadius]);
+				setDefaultCameraLoc([maxRadius*1.3, y + 10, maxRadius*1.3]);
 				setDefaultCameraLookAt([0, y / 2, 0]);
 			})
 

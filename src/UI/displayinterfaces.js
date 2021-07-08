@@ -11,6 +11,7 @@ export default function DisplayAllNodes1({
 	isinterface,
 	focusNodeLevel2,
 	selectedNode,
+	level3,
 }) {
 	const [expanded, setExpanded] = React.useState(false);
 
@@ -37,11 +38,11 @@ export default function DisplayAllNodes1({
 						<Typography>Interfaces</Typography>
 					</AccordionSummary>
 					<AccordionDetails style={{ display: "block" }}>
-						{selectedNode!==null && interfaces.map((interface1) => {
+						{(selectedNode!==null||level3===true) && interfaces.map((interface1) => {
 							counter++;
 							return (
 								<Paper
-									key={interface1.data.sourceNameLabel+counter+selectedNode.data.nodeName}
+									key={interface1.data.sourceNameLabel+counter}
 									style={{
 										cursor: "pointer",
 										padding: 5,

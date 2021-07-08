@@ -2,6 +2,7 @@ import React, {useState, useRef } from "react";
 import { useFrame, useLoader } from "@react-three/fiber";
 import img from "./interface.png";
 import * as THREE from "three";
+import RenderAnnotations from "./Annotaions";
 
 export default function InterfaceModel({ node ,setHoverNode1,focusNodeLevel2}) {
 	const group = useRef();
@@ -18,22 +19,23 @@ export default function InterfaceModel({ node ,setHoverNode1,focusNodeLevel2}) {
 			onPointerOver={() => setHoverNode1(node)}
 			onPointerLeave={() => setHoverNode1(null)}
 		>
+			<RenderAnnotations name={node.data.sourceNameLabel} />
 		<mesh
 					
 					ref={mesh}
 					
 				>
-					<boxBufferGeometry attach="geometry" args={[0.8, 0.8, 0.8]} />
+					<boxBufferGeometry attach="geometry" args={[0.8, 0.3, 0.8]} />
 					<meshStandardMaterial
 						attachArray="material"
-						//color={"white"}
+						color={"white"}
 						toneMapped={false}
-						map={boxTexture}
+						//map={boxTexture}
 					/>
 
 					<meshStandardMaterial
 						attachArray="material"
-						// color={"white"}
+					color={"white"}
 						map={boxTexture}
 					/>
 					<meshStandardMaterial
@@ -43,18 +45,18 @@ export default function InterfaceModel({ node ,setHoverNode1,focusNodeLevel2}) {
 					/>
 					<meshStandardMaterial
 						attachArray="material"
-						//color={"white"}
-						map={boxTexture}
+						color={"white"}
+						//map={boxTexture}
 					/>
 					<meshStandardMaterial
 						attachArray="material"
-						//color={"white"}
-						map={boxTexture}
+						color={"white"}
+						//map={boxTexture}
 					/>
 					<meshStandardMaterial
 						attachArray="material"
-						//color={"white"}
-						map={boxTexture}
+						color={"white"}
+						//map={boxTexture}
 					/>
 				</mesh>
 		</group>
