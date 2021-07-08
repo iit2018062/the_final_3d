@@ -333,7 +333,7 @@ function fetchlevel3(epg) {
 				// var y = nodeData.position[1] + 5;
 				var y = 2;
 				if (nodeData.data.nodeRole === "spine") {
-					y = 12;
+					y = nodeData.position[1]-2;
 				}
 
 				for (let i in input) {
