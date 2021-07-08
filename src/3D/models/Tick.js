@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei";
 
 export default function TickModel({ position }) {
 	const group = useRef();
-	const { nodes, materials } = useGLTF("/3DModels/tick.glb");
+	const { nodes, materials } = useGLTF(process.env.PUBLIC_URL  + "/3DModels/tick.glb");
 	return (
 		<group
 			ref={group}
@@ -20,4 +20,4 @@ export default function TickModel({ position }) {
 	);
 }
 
-useGLTF.preload("/3DModels/tick.glb");
+useGLTF.preload(process.env.PUBLIC_URL  + "/3DModels/tick.glb");
