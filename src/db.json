@@ -1,0 +1,2201 @@
+{
+	"data": [
+		{
+			"Node.nodeName": "scaleleaf-201",
+			"Node.nodeId": "201",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO220120HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scalespine-602"
+				},
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scalespine-601"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-202",
+			"Node.nodeId": "202",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO220220HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scalespine-601"
+				},
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scalespine-602"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-203",
+			"Node.nodeId": "203",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO220320HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/3",
+					"neighbourNode": "scalespine-602"
+				},
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/3",
+					"neighbourNode": "scalespine-601"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-204",
+			"Node.nodeId": "204",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO220420HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/4",
+					"neighbourNode": "scalespine-601"
+				},
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/4",
+					"neighbourNode": "scalespine-602"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-205",
+			"Node.nodeId": "205",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO220520HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/5",
+					"neighbourNode": "scalespine-601"
+				},
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/5",
+					"neighbourNode": "scalespine-602"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-206",
+			"Node.nodeId": "206",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO220620HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/6",
+					"neighbourNode": "scalespine-602"
+				},
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/6",
+					"neighbourNode": "scalespine-601"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-207",
+			"Node.nodeId": "207",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO220720HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/7",
+					"neighbourNode": "scalespine-601"
+				},
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/7",
+					"neighbourNode": "scalespine-602"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-208",
+			"Node.nodeId": "208",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO220820HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/8",
+					"neighbourNode": "scalespine-602"
+				},
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/8",
+					"neighbourNode": "scalespine-601"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-209",
+			"Node.nodeId": "209",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO220920HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/9",
+					"neighbourNode": "scalespine-601"
+				},
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/9",
+					"neighbourNode": "scalespine-602"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-210",
+			"Node.nodeId": "210",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO221021HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/10",
+					"neighbourNode": "scalespine-602"
+				},
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/10",
+					"neighbourNode": "scalespine-601"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-211",
+			"Node.nodeId": "211",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO221121HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/11",
+					"neighbourNode": "scalespine-602"
+				},
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/11",
+					"neighbourNode": "scalespine-601"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-212",
+			"Node.nodeId": "212",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO221221HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/12",
+					"neighbourNode": "scalespine-601"
+				},
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/12",
+					"neighbourNode": "scalespine-602"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-213",
+			"Node.nodeId": "213",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO221321HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/13",
+					"neighbourNode": "scalespine-601"
+				},
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/13",
+					"neighbourNode": "scalespine-602"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-214",
+			"Node.nodeId": "214",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO221421HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/14",
+					"neighbourNode": "scalespine-602"
+				},
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/14",
+					"neighbourNode": "scalespine-601"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-215",
+			"Node.nodeId": "215",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO221521HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/15",
+					"neighbourNode": "scalespine-601"
+				},
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/15",
+					"neighbourNode": "scalespine-602"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-216",
+			"Node.nodeId": "216",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO221621HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/16",
+					"neighbourNode": "scalespine-601"
+				},
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/16",
+					"neighbourNode": "scalespine-602"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-217",
+			"Node.nodeId": "217",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO221721HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/17",
+					"neighbourNode": "scalespine-601"
+				},
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/17",
+					"neighbourNode": "scalespine-602"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-218",
+			"Node.nodeId": "218",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO221821HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/18",
+					"neighbourNode": "scalespine-601"
+				},
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/18",
+					"neighbourNode": "scalespine-602"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-219",
+			"Node.nodeId": "219",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO221921HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/19",
+					"neighbourNode": "scalespine-601"
+				},
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/19",
+					"neighbourNode": "scalespine-602"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-220",
+			"Node.nodeId": "220",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO222022HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/20",
+					"neighbourNode": "scalespine-601"
+				},
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/20",
+					"neighbourNode": "scalespine-602"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-221",
+			"Node.nodeId": "221",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO222122HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/21",
+					"neighbourNode": "scalespine-602"
+				},
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/21",
+					"neighbourNode": "scalespine-601"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-222",
+			"Node.nodeId": "222",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO222222HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/22",
+					"neighbourNode": "scalespine-602"
+				},
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/22",
+					"neighbourNode": "scalespine-601"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-223",
+			"Node.nodeId": "223",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO222322HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/23",
+					"neighbourNode": "scalespine-601"
+				},
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/23",
+					"neighbourNode": "scalespine-602"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-224",
+			"Node.nodeId": "224",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO222422HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/24",
+					"neighbourNode": "scalespine-602"
+				},
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/24",
+					"neighbourNode": "scalespine-601"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-225",
+			"Node.nodeId": "225",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO222522HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/25",
+					"neighbourNode": "scalespine-602"
+				},
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/25",
+					"neighbourNode": "scalespine-601"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-226",
+			"Node.nodeId": "226",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO222622HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/26",
+					"neighbourNode": "scalespine-601"
+				},
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/26",
+					"neighbourNode": "scalespine-602"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-227",
+			"Node.nodeId": "227",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO222722HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/27",
+					"neighbourNode": "scalespine-602"
+				},
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/27",
+					"neighbourNode": "scalespine-601"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-228",
+			"Node.nodeId": "228",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO222822HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/28",
+					"neighbourNode": "scalespine-602"
+				},
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/28",
+					"neighbourNode": "scalespine-601"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-229",
+			"Node.nodeId": "229",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO222922HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/29",
+					"neighbourNode": "scalespine-601"
+				},
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/29",
+					"neighbourNode": "scalespine-602"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-230",
+			"Node.nodeId": "230",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO223023HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/30",
+					"neighbourNode": "scalespine-601"
+				},
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/30",
+					"neighbourNode": "scalespine-602"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-231",
+			"Node.nodeId": "231",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO223123HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/31",
+					"neighbourNode": "scalespine-601"
+				},
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/31",
+					"neighbourNode": "scalespine-602"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-232",
+			"Node.nodeId": "232",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO223223HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/32",
+					"neighbourNode": "scalespine-601"
+				},
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/32",
+					"neighbourNode": "scalespine-602"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-233",
+			"Node.nodeId": "233",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO223323HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/33",
+					"neighbourNode": "scalespine-601"
+				},
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/33",
+					"neighbourNode": "scalespine-602"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-234",
+			"Node.nodeId": "234",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO223423HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/34",
+					"neighbourNode": "scalespine-601"
+				},
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/34",
+					"neighbourNode": "scalespine-602"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-235",
+			"Node.nodeId": "235",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO223523HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/35",
+					"neighbourNode": "scalespine-602"
+				},
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/35",
+					"neighbourNode": "scalespine-601"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-236",
+			"Node.nodeId": "236",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO223623HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/36",
+					"neighbourNode": "scalespine-601"
+				},
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/36",
+					"neighbourNode": "scalespine-602"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-237",
+			"Node.nodeId": "237",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO223723HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/37",
+					"neighbourNode": "scalespine-602"
+				},
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/37",
+					"neighbourNode": "scalespine-601"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-238",
+			"Node.nodeId": "238",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO223823HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/38",
+					"neighbourNode": "scalespine-602"
+				},
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/38",
+					"neighbourNode": "scalespine-601"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-239",
+			"Node.nodeId": "239",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO223923HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/39",
+					"neighbourNode": "scalespine-602"
+				},
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/39",
+					"neighbourNode": "scalespine-601"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scaleleaf-240",
+			"Node.nodeId": "240",
+			"Node.nodeRole": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO224024HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/40",
+					"neighbourNode": "scalespine-602"
+				},
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/40",
+					"neighbourNode": "scalespine-601"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scalespine-601",
+			"Node.nodeId": "601",
+			"Node.nodeRole": "spine",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C9508",
+			"Node.serial": "SAL60160MHM",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/12",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-212"
+				},
+				{
+					"interface": "eth1/39",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-239"
+				},
+				{
+					"interface": "eth1/23",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-223"
+				},
+				{
+					"interface": "eth1/27",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-227"
+				},
+				{
+					"interface": "eth1/24",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-224"
+				},
+				{
+					"interface": "eth1/4",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-204"
+				},
+				{
+					"interface": "eth1/32",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-232"
+				},
+				{
+					"interface": "eth1/38",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-238"
+				},
+				{
+					"interface": "eth1/6",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-206"
+				},
+				{
+					"interface": "eth1/36",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-236"
+				},
+				{
+					"interface": "eth1/11",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-211"
+				},
+				{
+					"interface": "eth1/29",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-229"
+				},
+				{
+					"interface": "eth1/34",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-234"
+				},
+				{
+					"interface": "eth1/15",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-215"
+				},
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-202"
+				},
+				{
+					"interface": "eth1/14",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-214"
+				},
+				{
+					"interface": "eth1/31",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-231"
+				},
+				{
+					"interface": "eth1/9",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-209"
+				},
+				{
+					"interface": "eth1/35",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-235"
+				},
+				{
+					"interface": "eth1/17",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-217"
+				},
+				{
+					"interface": "eth1/20",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-220"
+				},
+				{
+					"interface": "eth1/40",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-240"
+				},
+				{
+					"interface": "eth1/22",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-222"
+				},
+				{
+					"interface": "eth1/8",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-208"
+				},
+				{
+					"interface": "eth1/3",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-203"
+				},
+				{
+					"interface": "eth1/26",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-226"
+				},
+				{
+					"interface": "eth1/33",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-233"
+				},
+				{
+					"interface": "eth1/13",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-213"
+				},
+				{
+					"interface": "eth1/28",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-228"
+				},
+				{
+					"interface": "eth1/5",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-205"
+				},
+				{
+					"interface": "eth1/7",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-207"
+				},
+				{
+					"interface": "eth1/37",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-237"
+				},
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-201"
+				},
+				{
+					"interface": "eth1/21",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-221"
+				},
+				{
+					"interface": "eth1/18",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-218"
+				},
+				{
+					"interface": "eth1/19",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-219"
+				},
+				{
+					"interface": "eth1/25",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-225"
+				},
+				{
+					"interface": "eth1/16",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-216"
+				},
+				{
+					"interface": "eth1/30",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-230"
+				},
+				{
+					"interface": "eth1/10",
+					"neighbourInterface": "eth1/1",
+					"neighbourNode": "scaleleaf-210"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scalespine-602",
+			"Node.nodeId": "602",
+			"Node.nodeRole": "spine",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C9508",
+			"Node.serial": "SAL60260MHM",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/4",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-204"
+				},
+				{
+					"interface": "eth1/21",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-221"
+				},
+				{
+					"interface": "eth1/19",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-219"
+				},
+				{
+					"interface": "eth1/11",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-211"
+				},
+				{
+					"interface": "eth1/35",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-235"
+				},
+				{
+					"interface": "eth1/18",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-218"
+				},
+				{
+					"interface": "eth1/31",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-231"
+				},
+				{
+					"interface": "eth1/8",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-208"
+				},
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-201"
+				},
+				{
+					"interface": "eth1/7",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-207"
+				},
+				{
+					"interface": "eth1/9",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-209"
+				},
+				{
+					"interface": "eth1/38",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-238"
+				},
+				{
+					"interface": "eth1/29",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-229"
+				},
+				{
+					"interface": "eth1/23",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-223"
+				},
+				{
+					"interface": "eth1/20",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-220"
+				},
+				{
+					"interface": "eth1/12",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-212"
+				},
+				{
+					"interface": "eth1/40",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-240"
+				},
+				{
+					"interface": "eth1/24",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-224"
+				},
+				{
+					"interface": "eth1/26",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-226"
+				},
+				{
+					"interface": "eth1/25",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-225"
+				},
+				{
+					"interface": "eth1/36",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-236"
+				},
+				{
+					"interface": "eth1/13",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-213"
+				},
+				{
+					"interface": "eth1/5",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-205"
+				},
+				{
+					"interface": "eth1/34",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-234"
+				},
+				{
+					"interface": "eth1/14",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-214"
+				},
+				{
+					"interface": "eth1/6",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-206"
+				},
+				{
+					"interface": "eth1/17",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-217"
+				},
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-202"
+				},
+				{
+					"interface": "eth1/15",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-215"
+				},
+				{
+					"interface": "eth1/39",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-239"
+				},
+				{
+					"interface": "eth1/30",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-230"
+				},
+				{
+					"interface": "eth1/16",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-216"
+				},
+				{
+					"interface": "eth1/32",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-232"
+				},
+				{
+					"interface": "eth1/3",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-203"
+				},
+				{
+					"interface": "eth1/22",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-222"
+				},
+				{
+					"interface": "eth1/10",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-210"
+				},
+				{
+					"interface": "eth1/33",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-233"
+				},
+				{
+					"interface": "eth1/37",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-237"
+				},
+				{
+					"interface": "eth1/27",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-227"
+				},
+				{
+					"interface": "eth1/28",
+					"neighbourInterface": "eth1/2",
+					"neighbourNode": "scaleleaf-228"
+				}
+			]
+		},
+		{
+			"Node.nodeName": "scalespine-603",
+			"Node.nodeId": "603",
+			"Node.nodeRole": "spine",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C9508",
+			"Node.serial": "SAL60360MHM",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0
+		},
+		{
+			"Node.nodeName": "scalespine-604",
+			"Node.nodeId": "604",
+			"Node.nodeRole": "spine",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C9508",
+			"Node.serial": "SAL60460MHM",
+			"Node.version": "n9000-15.0(1)",
+			"Node.anomalyScore": 0,
+			"Node.fabricLinks": [
+				{
+					"interface": "eth1/8",
+					"neighbourInterface": "eth1/4",
+					"neighbourNode": "scaleleaf-208"
+				},
+				{
+					"interface": "eth1/10",
+					"neighbourInterface": "eth1/4",
+					"neighbourNode": "scaleleaf-210"
+				},
+				{
+					"interface": "eth1/7",
+					"neighbourInterface": "eth1/4",
+					"neighbourNode": "scaleleaf-207"
+				},
+				{
+					"interface": "eth1/5",
+					"neighbourInterface": "eth1/4",
+					"neighbourNode": "scaleleaf-205"
+				},
+				{
+					"interface": "eth1/9",
+					"neighbourInterface": "eth1/4",
+					"neighbourNode": "scaleleaf-209"
+				},
+				{
+					"interface": "eth1/3",
+					"neighbourInterface": "eth1/4",
+					"neighbourNode": "scaleleaf-203"
+				},
+				{
+					"interface": "eth1/1",
+					"neighbourInterface": "eth1/4",
+					"neighbourNode": "scaleleaf-201"
+				},
+				{
+					"interface": "eth1/6",
+					"neighbourInterface": "eth1/4",
+					"neighbourNode": "scaleleaf-206"
+				},
+				{
+					"interface": "eth1/2",
+					"neighbourInterface": "eth1/4",
+					"neighbourNode": "scaleleaf-202"
+				}
+			]
+		}
+	],
+	"data2": [
+		{
+			"Node.nodeName": "scaleleaf-204",
+			"Node.nodeId": "204",
+			"Node.nodeType": "leaf",
+			"Node.operSt": "active",
+			"Node.model": "N9K-C93180YC-FX",
+			"Node.serial": "FDO220420HC",
+			"Node.version": "n9000-15.0(1)",
+			"Node.interface": [
+				{
+					"Interface.sourceName": "interface/interface-[eth1/75]",
+					"Interface.sourceNameLabel": "eth1/75",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/49]",
+					"Interface.sourceNameLabel": "eth1/49",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lacp", "cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/66]",
+					"Interface.sourceNameLabel": "eth1/66",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/1]",
+					"Interface.sourceNameLabel": "eth1/1",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/16]",
+					"Interface.sourceNameLabel": "eth1/16",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/60]",
+					"Interface.sourceNameLabel": "eth1/60",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[vpc-51003]",
+					"Interface.sourceNameLabel": "vpc-51003",
+					"Interface.interfaceType": "pc",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/34]",
+					"Interface.sourceNameLabel": "eth1/34",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/39]",
+					"Interface.sourceNameLabel": "eth1/39",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/79]",
+					"Interface.sourceNameLabel": "eth1/79",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[vpc-51001]",
+					"Interface.sourceNameLabel": "vpc-51001",
+					"Interface.interfaceType": "pc",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0
+				},
+				{
+					"Interface.sourceName": "interface/interface-[vpc-51009]",
+					"Interface.sourceNameLabel": "vpc-51009",
+					"Interface.interfaceType": "pc",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/55]",
+					"Interface.sourceNameLabel": "eth1/55",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/13]",
+					"Interface.sourceNameLabel": "eth1/13",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[vpc-51008]",
+					"Interface.sourceNameLabel": "vpc-51008",
+					"Interface.interfaceType": "pc",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/3]",
+					"Interface.sourceNameLabel": "eth1/3",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 75,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/44]",
+					"Interface.sourceNameLabel": "eth1/44",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lacp", "cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/61]",
+					"Interface.sourceNameLabel": "eth1/61",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/42]",
+					"Interface.sourceNameLabel": "eth1/42",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lacp", "cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/62]",
+					"Interface.sourceNameLabel": "eth1/62",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/4]",
+					"Interface.sourceNameLabel": "eth1/4",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"],
+					"Interface.endpoints": [
+						{
+							"Endpoint.tenant": "__sn_cluster_DC-WEST-sn-cluster1",
+							"Endpoint.mac": "12:79:5C:97:E8:12",
+							"Endpoint.anomalyScore": 0,
+							"Endpoint.ip": ["172.25.229.241"],
+							"Endpoint.vmName": "vm-3",
+							"Endpoint.epg": {
+								"epg.tenant": "__sn_cluster_DC-WEST-sn-cluster1",
+								"epg.epg": "app_epg"
+							}
+						}
+					]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/43]",
+					"Interface.sourceNameLabel": "eth1/43",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lacp", "cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/46]",
+					"Interface.sourceNameLabel": "eth1/46",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lacp", "cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/71]",
+					"Interface.sourceNameLabel": "eth1/71",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/40]",
+					"Interface.sourceNameLabel": "eth1/40",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/10]",
+					"Interface.sourceNameLabel": "eth1/10",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/64]",
+					"Interface.sourceNameLabel": "eth1/64",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/38]",
+					"Interface.sourceNameLabel": "eth1/38",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[vpc-51006]",
+					"Interface.sourceNameLabel": "vpc-51006",
+					"Interface.interfaceType": "pc",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/48]",
+					"Interface.sourceNameLabel": "eth1/48",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lacp", "cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/56]",
+					"Interface.sourceNameLabel": "eth1/56",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/68]",
+					"Interface.sourceNameLabel": "eth1/68",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/65]",
+					"Interface.sourceNameLabel": "eth1/65",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/23]",
+					"Interface.sourceNameLabel": "eth1/23",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/11]",
+					"Interface.sourceNameLabel": "eth1/11",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/53]",
+					"Interface.sourceNameLabel": "eth1/53",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/41]",
+					"Interface.sourceNameLabel": "eth1/41",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lacp", "cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[vpc-51000]",
+					"Interface.sourceNameLabel": "vpc-51000",
+					"Interface.interfaceType": "pc",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/77]",
+					"Interface.sourceNameLabel": "eth1/77",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/17]",
+					"Interface.sourceNameLabel": "eth1/17",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/28]",
+					"Interface.sourceNameLabel": "eth1/28",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/78]",
+					"Interface.sourceNameLabel": "eth1/78",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[vpc-51007]",
+					"Interface.sourceNameLabel": "vpc-51007",
+					"Interface.interfaceType": "pc",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/51]",
+					"Interface.sourceNameLabel": "eth1/51",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[vpc-51005]",
+					"Interface.sourceNameLabel": "vpc-51005",
+					"Interface.interfaceType": "pc",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/69]",
+					"Interface.sourceNameLabel": "eth1/69",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/72]",
+					"Interface.sourceNameLabel": "eth1/72",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/59]",
+					"Interface.sourceNameLabel": "eth1/59",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/30]",
+					"Interface.sourceNameLabel": "eth1/30",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/58]",
+					"Interface.sourceNameLabel": "eth1/58",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[vpc-51004]",
+					"Interface.sourceNameLabel": "vpc-51004",
+					"Interface.interfaceType": "pc",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/26]",
+					"Interface.sourceNameLabel": "eth1/26",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/27]",
+					"Interface.sourceNameLabel": "eth1/27",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/6]",
+					"Interface.sourceNameLabel": "eth1/6",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/36]",
+					"Interface.sourceNameLabel": "eth1/36",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/76]",
+					"Interface.sourceNameLabel": "eth1/76",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/21]",
+					"Interface.sourceNameLabel": "eth1/21",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/9]",
+					"Interface.sourceNameLabel": "eth1/9",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/25]",
+					"Interface.sourceNameLabel": "eth1/25",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/67]",
+					"Interface.sourceNameLabel": "eth1/67",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/29]",
+					"Interface.sourceNameLabel": "eth1/29",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/74]",
+					"Interface.sourceNameLabel": "eth1/74",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/32]",
+					"Interface.sourceNameLabel": "eth1/32",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/20]",
+					"Interface.sourceNameLabel": "eth1/20",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/47]",
+					"Interface.sourceNameLabel": "eth1/47",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lacp", "cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/45]",
+					"Interface.sourceNameLabel": "eth1/45",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lacp", "cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/63]",
+					"Interface.sourceNameLabel": "eth1/63",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/37]",
+					"Interface.sourceNameLabel": "eth1/37",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/18]",
+					"Interface.sourceNameLabel": "eth1/18",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/31]",
+					"Interface.sourceNameLabel": "eth1/31",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/54]",
+					"Interface.sourceNameLabel": "eth1/54",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/22]",
+					"Interface.sourceNameLabel": "eth1/22",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/52]",
+					"Interface.sourceNameLabel": "eth1/52",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[vpc-51002]",
+					"Interface.sourceNameLabel": "vpc-51002",
+					"Interface.interfaceType": "pc",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/14]",
+					"Interface.sourceNameLabel": "eth1/14",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/73]",
+					"Interface.sourceNameLabel": "eth1/73",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/2]",
+					"Interface.sourceNameLabel": "eth1/2",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/33]",
+					"Interface.sourceNameLabel": "eth1/33",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/12]",
+					"Interface.sourceNameLabel": "eth1/12",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/70]",
+					"Interface.sourceNameLabel": "eth1/70",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/24]",
+					"Interface.sourceNameLabel": "eth1/24",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/35]",
+					"Interface.sourceNameLabel": "eth1/35",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/50]",
+					"Interface.sourceNameLabel": "eth1/50",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lacp", "cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/80]",
+					"Interface.sourceNameLabel": "eth1/80",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/15]",
+					"Interface.sourceNameLabel": "eth1/15",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/7]",
+					"Interface.sourceNameLabel": "eth1/7",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/5]",
+					"Interface.sourceNameLabel": "eth1/5",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/19]",
+					"Interface.sourceNameLabel": "eth1/19",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/8]",
+					"Interface.sourceNameLabel": "eth1/8",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["lldp"]
+				},
+				{
+					"Interface.sourceName": "interface/interface-[eth1/57]",
+					"Interface.sourceNameLabel": "eth1/57",
+					"Interface.interfaceType": "physical",
+					"Interface.adminStatus": "up",
+					"Interface.operStatus": "up",
+					"Interface.anomalyScore": 0,
+					"Interface.protocolList": ["cdp"]
+				}
+			]
+		}
+	]
+}
