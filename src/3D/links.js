@@ -11,12 +11,14 @@ export default function RenderLinks({ links, selectedNode ,level3}) {
 			);
 		}
 	});
-
+    var counter=0;
 	if (selectedNode === null && level3===false) {
+
 		return (
 			<group ref={group}>
 				{links.map((link) => {
-					return <LinkModel key={link.id} link={link} />;
+					counter++;
+					return <LinkModel key={link.id+counter} link={link} />;
 				})}
 			</group>
 		);

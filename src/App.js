@@ -189,13 +189,13 @@ function fetchlevel3(epg) {
 						const endObj = {
 							data: input[j].endpoints[0],
 							vmName: input[j].vmName,
-							position: [x1, y1 + 2, z1],
+							position: [x1, y1 + 6, z1],
 						};
 						newEndpoints.push(endObj);
 						newInterfaceLinks.push({
 							color: "red",
 							src: [x1, y1, z1],
-							target: [x1, y1 + 2, z1],
+							target: [x1, y1 + 6, z1],
 							id: `${input[j].endpoints[0].epg}${count}${tempCombined[nodeIndex].data.nodeName}`,
 						});
 						//vms
@@ -204,13 +204,13 @@ function fetchlevel3(epg) {
 							const vmObj = {
 								data: input[j].endpoints[0].epg,
 								vmName: input[j].endpoints[0].vmName,
-								position: [x1, y1 + 5, z1],
+								position: [x1, y1 + 9, z1],
 							};
 							newVms.push(vmObj);
 							newInterfaceLinks.push({
 								color: "green",
-								src: [x1, y1 + 2, z1],
-								target: [x1, y1 + 5, z1],
+								src: [x1, y1 + 6, z1],
+								target: [x1, y1 + 9, z1],
 								id: `${input[j].endpoints[0].epg}${count}${tempCombined[nodeIndex].data.nodeName}`,
 							});
 						}
@@ -279,7 +279,7 @@ function fetchlevel3(epg) {
 		);
 
 		const cameraLoc = new THREE.Vector3();
-		cameraLoc.addVectors(nodeLoc, new THREE.Vector3(5, 5, 5));
+		cameraLoc.addVectors(nodeLoc, new THREE.Vector3(20, 20, 20));
 		setTargetPosition(cameraLoc);
 
 		setTargetLookAt([
@@ -333,7 +333,7 @@ function fetchlevel3(epg) {
 				// var y = nodeData.position[1] + 5;
 				var y = 2;
 				if (nodeData.data.nodeRole === "spine") {
-					y = nodeData.position[1]-2;
+					y = nodeData.position[1];
 				}
 
 				for (let i in input) {

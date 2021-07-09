@@ -14,9 +14,7 @@ export default function NodePopUp2({ nodeData }) {
 						padding: 10,
 					}}
 				>
-					<Typography>
-                    applicationProfile : {nodeData.data.applicationProfile}
-					</Typography>
+					
 					<Typography>
                     epg : {nodeData.data.epg}
 					</Typography>
