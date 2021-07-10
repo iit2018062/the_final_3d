@@ -42,7 +42,7 @@ export default function Renderlevel3({
 					} else if (
 						node.data.nodeRole === "spine" 
 					) {
-						console.log(node.data.nodeName);
+						//console.log(node.data.nodeName);
 						return (
 							<group key={counter}>
 								{/* {tick && <TickModel position={node.position} />}

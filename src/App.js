@@ -43,6 +43,8 @@ function App() {
 	const [level3nodes, setlevel3nodes] = useState([]);
 	const [level3leaf, setlevel3leaf] = useState([]);
 	const [level3spine, setlevel3spine] = useState([]);
+	//level2
+	const [level2spine,setlevel2spine] = useState([]);
 
 	const [level3, setlevel3] = useState(false);
 	function focusNodeLevel2(nodeData) {
@@ -73,6 +75,7 @@ function App() {
 		fetchlevel3(epg);
 	}
 function fetchlevel3(epg) {
+	setlevel2spine([]);
 		resetCamera();
 		axios({
 			url: "https://172.31.165.136:31782/api/telemetry/topology/search.json?filter="+epg,
@@ -169,8 +172,7 @@ function fetchlevel3(epg) {
 				var count = 0;
 				for (let j in input) {
 					count++;
-					theta1 =
-						(2 * Math.PI) / Math.min(maxNodesInLevel1, nodesLeft1);
+					theta1 =(2 * Math.PI) / Math.min(maxNodesInLevel1, nodesLeft1);
 					radius1 = maxNodesInLevel1 / 2;
 					const x1 =myObj.position[0] + radius1 * Math.cos(theta1 * j);
 					const z1 =myObj.position[2] + radius1 * Math.sin(theta1 * j);
@@ -268,6 +270,7 @@ function fetchlevel3(epg) {
 		{resetCamera();return;}
 		setInterfaces([]);
 		setInterfaceLink([]);
+		setlevel2spine([]);
 		fetchData2(nodeData);
 		
 
@@ -292,7 +295,7 @@ function fetchlevel3(epg) {
 		//dont know why but 1ms delay solves the issue
 		const myTime = setTimeout(() => {
 			setSelectedNode(nodeData);
-		}, 100);
+		}, 200);
 		//for clearing the timer
 		timeOutRef.current = myTime;
 
@@ -304,6 +307,7 @@ function fetchlevel3(epg) {
 	function fetchData2(nodeData) {
 		//for fetching data for level
 		setisinterface(true);
+		setlevel2spine([]);
 		resetCamera();
 		axios({
 			url: "https://172.31.165.136:31782/api/telemetry/topology/nodes/details.json?fabricName=DC-WEST&nodeName="+nodeData.data.nodeName,
@@ -355,19 +359,30 @@ function fetchlevel3(epg) {
 					});
 					newInterfaces.push(myObj);
 					//endpoints
+					var m = 0;
 					if (input[i].endpoints !== undefined) {
+						m = (2*Math.PI)/(input[i].endpoints.length);
+						var radius2 = input[i].endpoints.length/2;
+						for(var k in input[i].endpoints){
+							const x_cor=x+radius2 * Math.cos(m * k);
+							const z_cor =z+radius2 * Math.sin(m * k);
+							
 						const endObj = {
-							data: input[i].endpoints[0],
-							position: [x, y + 5, z],
+							data: input[i].endpoints[k],
+							position: [x_cor, y + 5, z_cor],
+						
 						};
 						newEndpoints.push(endObj);
+					
 						newInterfaceLinks.push({
 							color: "red",
 							src: [x, y, z],
-							target: [x, y + 5, z],
-							id: `${x}${y}${z}${nodeData.position}endpoints`,
+							target: [x_cor, y + 5, z_cor],
+							id: `${x}${y}${z}${nodeData.position}${x_cor}${z_cor}${k}`,
 						});
+
 						//vms
+
 						if (input[i].endpoints[0].vmName !== undefined) {
 							//console.log(epg);
 							const vmObj = {
@@ -378,12 +393,12 @@ function fetchlevel3(epg) {
 							newVms.push(vmObj);
 							newInterfaceLinks.push({
 								color: "green",
-								src: [x, y + 5, z],
+								src: [x_cor, y + 5, z_cor],
 								target: [x, y + 10, z],
-								id: `${nodeData.data.fabricLinks.neighbourNode}${nodeData.position}vms`,
+								id: `${nodeData.data.fabricLinks.neighbourNode}${nodeData.position}${x_cor}${z_cor}`,
 							});
 						}
-					}
+					}}
 
 					counter += 1;
 					if (counter === maxNodesInLevel) {
@@ -394,25 +409,36 @@ function fetchlevel3(epg) {
 					}
 				}
 				//reamining spine links
+				var newSpines=[];
 				const tempCombined = [...spines, ...leafs];
 				if (
 					nodeData.data.nodeRole === "leaf" &&
 					nodeData.data.fabricLinks !== undefined
 				) {
+					setlevel2spine([]);
+					var r = nodeData.data.fabricLinks.length/2;
+					var angle = (2*Math.PI)/(nodeData.data.fabricLinks.length);
 					for (let i in nodeData.data.fabricLinks) {
-						const node2 =
-							nodeData.data.fabricLinks[i].neighbourNode;
+						const node2 =nodeData.data.fabricLinks[i].neighbourNode;
 
 						//find target node
 						const targetIndex = tempCombined
 							.map((node) => node.data.nodeName)
 							.indexOf(node2);
+					    var x1 = nodeData.position[0] + r * Math.cos(angle * i);
+						var z1 = nodeData.position[2] + radius * Math.sin(angle * i);
+						const myobject = {
+							data:tempCombined[targetIndex].data,
+							position:[x1,tempCombined[targetIndex].position[1]-8,z1],
+						};
+						newSpines.push(myobject);
 						newInterfaceLinks.push({
-							src: [tempCombined[targetIndex].position[0],tempCombined[targetIndex].position[1]-8,tempCombined[targetIndex].position[2]],
+							src: [x1,tempCombined[targetIndex].position[1]-8,z1],
 							target: nodeData.position,
 							id: `${nodeData.data.fabricLinks.neighbourNode}${nodeData.position}${tempCombined[targetIndex].position}`,
 						});
 					}
+				setlevel2spine(newSpines);	
 				}
 			}
 				//console.log(newVms);
@@ -445,6 +471,7 @@ function fetchlevel3(epg) {
 		setSelectedNode(null);
 		setInterfaces([]);
 		setInterfaceLink([]);}
+		setlevel2spine([]);
 		setTargetPosition(new THREE.Vector3(...defaultCameraLoc));
 		setTargetLookAt(defaultCameraLookAt);
 	}
@@ -470,6 +497,7 @@ function fetchlevel3(epg) {
 		setlevel3details([]);
 		setlevel3nodes([]);
 		setHoverNode1(null);
+		setlevel2spine([]);
 	}
 	//fetch level one data
 	function fetchData1() {
@@ -482,6 +510,8 @@ function fetchlevel3(epg) {
 		setlevel3leaf([]);
 		setEndpoints([]);
 		setEpg([]);
+		setlevel2spine([]);
+
 
 		setStatusMsg("fetching data...");
 		axios({
@@ -649,6 +679,7 @@ function fetchlevel3(epg) {
 				focusNodeLevel2={focusNodeLevel2}
 				setHoverNode2={setHoverNode2}
 				setHoverNode3={setHoverNode3}
+				level2spine = {level2spine}
 			/>
 		);
 	}, [
@@ -665,6 +696,7 @@ function fetchlevel3(epg) {
 		level3,
 		level3details,
 		level3nodes,
+		level2spine,
 	]);
 	return (
 		<>

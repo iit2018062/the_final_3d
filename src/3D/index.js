@@ -33,6 +33,7 @@ export default function Main3DComp({
 	focusNodeLevel2,
 	setHoverNode2,
 	setHoverNode3,
+	level2spine,
 }) {
 	// console.log(level3);
 	// console.log(level3details);
@@ -62,6 +63,7 @@ export default function Main3DComp({
 					setHoverNode={setHoverNode}
 					selectedNode={selectedNode}
 					level3 = {level3}
+					level2spine = {level2spine}
 				/>
 			</Suspense>{" "}
 			<Suspense fallback={null}>

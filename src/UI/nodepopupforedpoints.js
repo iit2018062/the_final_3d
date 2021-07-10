@@ -23,6 +23,14 @@ export default function NodePopUp3({ nodeData }) {
 					<Typography>
                     tenant : {nodeData.data.tenant}
 					</Typography>
+					<Typography>
+					ip :{" "}
+						{
+						//if(nodeData.data.protocolList!==undefined){
+						(nodeData.data.ip!==undefined && nodeData.data.ip.map((protocol) => {
+							return `${protocol} `;
+						}))}
+					</Typography>
 					
 				</div>
 			)}

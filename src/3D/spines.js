@@ -9,9 +9,18 @@ export default function RenderSpines({
 	setHoverNode,
 	selectedNode,
 	level3,
+	level2spine,
 }) {
+	
+	
+	if(level2spine!==undefined && level2spine.length!==0 && selectedNode!==null && selectedNode.data.nodeRole!=="spine")
+	{//console.log(level2spine);
+		spines = level2spine;
+	}
 	return (
 		<group>
+
+			
 			{spines.map((node) => {
 				const score = node.data.anomalyScore;
 				const tick = score < 20 && score >= 0;
@@ -42,6 +51,8 @@ export default function RenderSpines({
 								focusNodeLevel1={focusNodeLevel1}
 								flag = {flag}
 								level3 = {level3}
+								
+
 								
 								
 							/>
